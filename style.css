@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2f2f2f;
+}
+
+.wrapper {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  margin: 30px 50px;
+}
+
+.title, .error_msg {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.refresh_btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #00c2ff;
+  border-radius: 5px;
+  color: #00c2ff;
+  background-color: #2f2f2f;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.refresh_btn:hover {
+  background-color: #21a6cc;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.users_list {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.user_card {
+  flex: 1;
+  min-width: 250px;
+  max-height: 250px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #21a6cc;
+  cursor: pointer;
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.user_card:hover {
+  transform: scale(1.1);
+}
